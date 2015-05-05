@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+links = Link.all
+links.each do |link|
+  link.clicks_count = link.clicks.count
+  link.save
+end

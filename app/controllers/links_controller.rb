@@ -24,7 +24,7 @@ class LinksController < ApplicationController
   end
 
   def index
-
+    @links = Link.order('clicks_count desc').all
   end
 
   private

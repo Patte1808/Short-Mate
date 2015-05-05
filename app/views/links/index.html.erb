@@ -1,0 +1,7 @@
+<h1>Top scoring links</h1>
+
+<ul>
+  <% @links.each do |link| %>
+    <li><%= link_to link.url, "/links/#{link.identifier}" %> (Clicks: <%= link.clicks_count %>)</li>
+  <% end %>
+</ul>

@@ -1,6 +1,6 @@
 <%= form_for @link do |f| %>
     <%= f.label :url %>
-    <%= f.text_field :url %>
+    <%= f.text_field :url, placeholder: 'Format: https://www.google.com' %>
 
     <%= f.submit %>
 <% end %>
